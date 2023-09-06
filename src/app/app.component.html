@@ -1,15 +1,19 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<app-header></app-header>
+<ng-container>
+  <app-header></app-header>
 <div class="container">
-  <app-todo-form></app-todo-form>
-  <app-todos></app-todos>
+  <div class="row">
+    <div class="col-lg-7">
+      <img src="../assets/todo.png" alt="" class="img-fluid">
+    </div>
+    <div class="col-lg-5 todo">
+      <app-todo-form></app-todo-form>
+      <app-todos></app-todos>
+    </div>
+  </div>
+ 
+
 
 </div>
+</ng-container>
+
 <router-outlet></router-outlet>
